@@ -14,37 +14,33 @@
     --white: white;
     --hover: #ae9961;
 }
+
+/* header styling */
+
 header{
-    /* height: 20vh; */
     width: 100%;
     position: sticky;
     z-index: 2;
     top: 0;
 }
 header #voucher{
-    /* height: 2rem; */
     background-color: var(--background);
     text-align: center;
     z-index: 2;
     height: auto;
     display: inline-block;
     padding: 5px;
-    /* display: grid;
-    align-items: center;
-    place-items: center; */
     width: 100%;
 }
 #voucher p{
     color: var(--text-color);
     z-index: 2;
     font-size: 0.8rem;
-    /* background-color: var(--background); */
 }
 .navbar{
     width: 100%;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     padding: 2.5rem;
     height: auto;
     cursor: pointer;
@@ -59,7 +55,6 @@ header #voucher{
 .nav-list .nav-link{
     display: flex;
     padding: 0.1rem;
-    /* border: 2px solid black; */
     justify-content: space-between;
 }
 .nav-link hr{
@@ -73,19 +68,6 @@ header #voucher{
     font-size: 1rem;
     text-transform: uppercase;
 }
-/* .nav-list ul li a::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: var(--text-color);
-    transition: 0.15s ease-in-out;
-}
-.nav-list ul li a:hover:after{
-    width: 100%;
-} */
 .nav-link li a:hover{
     border-bottom: 2px solid var(--text-color);
     transition: all 0.5s;
@@ -95,7 +77,6 @@ header #voucher{
     width: 60%;
     text-align: center;
     padding: 0.1rem;
-    /* border: 2px solid black; */
 }
 .logo a{
     color: var(--text-color);
@@ -105,29 +86,49 @@ header #voucher{
 }
 .nav-icon{
     width: 20%;
-    /* border: 2px solid black; */
 }
 .nav-icon ul{
     display: flex;
     justify-content: space-evenly;
     padding: 0.1rem;
 }
+.nav-icon li button{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.5s;
+    transform: scale();
+}
+.nav-link-hide li button{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: var(--primary-background);
+    cursor: pointer;
+    transition: all 0.5s;
+    transform: scale();
+}
+.nav-icon li button:hover,.nav-link-hide li button:hover{
+    color: #ae9961;
+    transform: scale(1.2);
+}
+
+/* header styling ends */
+
+/* hero section */
 main{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* padding: 1rem; */
-    /* background: linear-gradient(to top ,#80808052 0%,#80808079 100%);
-    backdrop-filter: blur(17px); */
-    background: url(prince-akachi-iuqcmC4NVNo-unsplash.jpg) no-repeat center scroll;
+    background: url(/images/prince-akachi-iuqcmC4NVNo-unsplash.jpg) no-repeat center scroll;
     background-size: cover;
-    /* background-color: aqua; */
     align-items: center;
 }
 .hero-section{
     display: flex;
     background-color: #00000020;
-    /* background: linear-gradient(to top ,#80808013 0%,#80808039 100%); */
     backdrop-filter: blur(3px);
     flex-direction: column;
     justify-content: center;
@@ -162,14 +163,13 @@ main{
     color: var(--hover);
     transition: 0.5s;
 }
+
+/* ends */
 .note{
     width: 100%;
     height: 100%;
     padding: 4rem 0;
     text-align: center;
-    /* display: grid;
-    align-items: center;
-    place-items: center; */
 }
 .note p{
     font-size: 1.25rem;
@@ -207,33 +207,24 @@ main{
     overflow: hidden;
     cursor: pointer;
     opacity: 1;
-    /* padding: 5rem; */
-    /* border: 2px solid black; */
 }
-/* .section-item:hover {
-    transition: 0.6s;
-    opacity: 0.8;
-    background-color: #383534 !important;
-    backdrop-filter: blur(3px);
-} */
 .item-1{
-    background: url(sincerely-media-9ShY-Tq70Mc-unsplash.jpg)no-repeat center center scroll;
+    background: url(/images/sincerely-media-9ShY-Tq70Mc-unsplash.jpg)no-repeat center center scroll;
     background-size: cover;
     -webkit-background-size: cover;
-    /* -moz-background-size: 100% 100%; */
 }
 .item-2{
-    background: url(ali-pazani-Pdds9XsWyoM-unsplash.jpg) no-repeat center center scroll;
+    background: url(/images/ali-pazani-Pdds9XsWyoM-unsplash.jpg) no-repeat center center scroll;
     background-size: cover;
     -webkit-background-size: cover;
 }
 .item-3{
-    background: url(pexels-matheus-bertelli-573315.jpg) no-repeat center center scroll;
+    background: url(/images/pexels-matheus-bertelli-573315.jpg) no-repeat center center scroll;
     background-size: cover;
     -webkit-background-size: cover;
 }
 .item-4{
-    background: url(vladimir-yelizarov-qM5Wrz-4rtQ-unsplash.jpg) no-repeat center center scroll;
+    background: url(/images/vladimir-yelizarov-qM5Wrz-4rtQ-unsplash.jpg) no-repeat center center scroll;
     background-size: cover;
     -webkit-background-size: cover;
 }
@@ -268,7 +259,6 @@ section:nth-of-type(2){
 }
 section:nth-of-type(2) .section-header{
     margin-top: 1rem;
-    /* border: 2px solid black; */
 }
 .section-header a{
     color: var(--text-color);
@@ -286,21 +276,16 @@ section:nth-of-type(2) .section-header{
     width: 100%;
     gap: 2rem;
     padding: 2.5rem;
-    /* border: 2px solid black; */
     justify-content: center;
-    /* margin: 0 2rem; */
 }
 .second-section-body .second-section-item{
-    /* border: 2px solid black; */
     width: 100%;
     cursor: pointer;
-    /* width: 400px; */
     height: 100%;
 }
 .section-content{
     position: relative;
     overflow: hidden;
-    /* border: 2px solid black; */
 }
 .section-icon{
     display: none;
@@ -323,7 +308,6 @@ section:nth-of-type(2) .section-header{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    /* height: 500px; */
 }
 .second-section-item .section-text{
     padding: 0.5rem 0;
@@ -342,15 +326,13 @@ article{
     height: 80vh;
     width: 100%;
     margin-top: 2rem;
-    background: url(serrah-galos-H6xxqTIHOTM-unsplash.jpg) no-repeat center scroll;
+    background: url(/images/serrah-galos-H6xxqTIHOTM-unsplash.jpg) no-repeat center scroll;
     background-size: cover;
 }
 .article-body{
     width: 100%;
     height: 80vh;
     backdrop-filter: blur(2px);
-    /* background: url(serrah-galos-H6xxqTIHOTM-unsplash.jpg) no-repeat center scroll;
-    background-size: cover; */
     display: flex;
     position: relative;
     gap: 15rem;
@@ -363,7 +345,6 @@ article{
     place-items: center;
     padding: 0.1rem;
     height: 80vh;
-    /* gap: 5rem; */
     text-align: center;
 }
 .article-body .article-item h2{
@@ -421,11 +402,9 @@ summary{
 section:nth-of-type(3){
     width: 100%;
     margin: 4rem 0 0 0;
-    /* border: 2px solid black; */
 }
 .journal{
     width: 100%;
-    /* margin: 4rem 0; */
 }
 .journal-header{
     width: 100%;
@@ -444,22 +423,17 @@ section:nth-of-type(3){
     width: 100%;
     display: flex;
     gap: 2rem;
-    /* border: 2px solid black; */
     justify-content: center;
     padding: 2rem;
 }
 .journal-body .journal-item{
     width: 100%;
-    /* height: 500px; */
-    /* height: 75vh; */
-    /* height: 100%; */
     height: 70vh;
-    /* border: 2px solid black; */
 }
 .journal-item img{
     width: 100%;
-    object-fit: cover;
     /* height: 100%; */
+    object-fit: cover;
 }
 .journal-item p{
     padding: 1rem 0;
@@ -476,20 +450,13 @@ section:nth-of-type(3){
 }
 .more{
     width: 100%;
-    background: url(ivan-dodig-dsKpUDsyDM0-unsplash.jpg) no-repeat center scroll;
+    background: url(/images/ivan-dodig-dsKpUDsyDM0-unsplash.jpg) no-repeat center scroll;
     background-size: cover;
-    /* border: 2px solid black; */
-    /* position: relative; */
     height: 80vh;
     align-items: center;
     overflow: hidden;
-    /* padding: 2rem; */
 }
-/* .more-body{
-    margin: 0 2rem;
-} */
 .more-text{
-    /* position: absolute; */
     text-align: center;
     display: flex;
     height: 80vh;
@@ -498,7 +465,6 @@ section:nth-of-type(3){
     flex-direction: column;
     width: 100%;
     align-items: center;
-    /* padding: 5rem; */
 }
 .more-text h2{
     font-size: 3.5rem;
@@ -563,7 +529,6 @@ footer{
 .footer-item{
     width: 100%;
     padding: 1rem 2rem;
-    /* border: 2px solid black; */
 }
 .footer-body{
     width: 100%;
@@ -606,7 +571,6 @@ footer{
 }
 .input-container{
     display: flex;
-    /* align-items: center; */
     width: 100%;
     gap: 0.5rem;
     flex-direction: column;
@@ -671,8 +635,6 @@ hr{
     justify-content: space-between;
 }
 .footer-selection{
-    /* width: 100%; */
-    /* border: 2px solid black; */
     display: flex;
     padding: 1rem;
     align-items: center;
@@ -699,13 +661,6 @@ select{
 }
 .footer-detail{
     padding: 1rem 0;
-    /* width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    float: right; */
-    /* border: 2px solid black; */
-    /* justify-content: flex-end; */
 }
 .footer-info p{
     color: var(--white);
@@ -733,7 +688,6 @@ select{
     left: 12px;
     width: 10%;
     text-align: center;
-    /* border: 2px solid black; */
     padding: 0.1rem;
     background-color: var(--white);
     color: black;
@@ -753,7 +707,6 @@ select{
     #voucher{
         height: 100%;
         margin-top: 0;
-        /* border: 2px solid black; */
         outline: none;
         text-align: center;
         display: block;
@@ -779,12 +732,10 @@ select{
         text-align: center;
         padding: 0.1rem;
         margin: 0;
-        /* border: 2px solid black; */
     }
     .nav-link{
         flex-direction: column;
         display: flex;
-        /* align-items: center; */
         justify-content: center;
         width: 100%;
         height: 30vh;
@@ -813,13 +764,9 @@ select{
         border-bottom: 1px solid white;
         padding-bottom: 0.1rem;
     }
-    /* .nav-link hr{
-        display: flex;
-    } */
     .nav-link li{
         padding: 1rem;
         margin: 0;
-        /* border: 2px solid black; */
     }
     .nav-link li a{
         color: var(--white);
@@ -848,7 +795,6 @@ select{
     .nav-icon{
         width: 30%;
         float: right;
-        /* border: 2px solid black; */
     }
     .nav-icon ul{
         display: flex;
@@ -906,13 +852,11 @@ select{
     section:nth-of-type(1){
         width: 100%;
         padding: 0.5rem 1rem;
-        /* border: 2px solid black; */
     }
     .section-header{
         padding: 1.5rem 0;
         text-align: center;
         width: 100%;
-        /* border: 2px solid black; */
         margin: 0;
     }
     .section-header h2{
@@ -1797,7 +1741,6 @@ header{
 .nav-icon{
     width: 30%;
     float: right;
-    /* border: 2px solid black; */
 }
 .nav-icon ul{
     display: flex;
@@ -2230,7 +2173,6 @@ header{
 .nav-link-hide li{
     color: white;
     display: flex;
-    /* border: 2px solid black; */
     align-items: center;
     gap: 0.7rem;
 }
@@ -2238,13 +2180,10 @@ header{
     border-bottom: 1px solid white;
     transition: 0.3s;
 }
-/* .nav-link hr{
-    display: flex;
-} */
+
 .nav-link li{
     padding: 1rem;
     margin: 0;
-    /* border: 2px solid black; */
 }
 .nav-link li a{
     color: var(--white);
@@ -2283,7 +2222,6 @@ header{
 .nav-icon{
     width: 30%;
     float: right;
-    /* border: 2px solid black; */
 }
 .nav-icon ul{
     display: flex;
@@ -2717,7 +2655,6 @@ header{
 .nav-link-hide li{
     color: white;
     display: flex;
-    /* border: 2px solid black; */
     align-items: center;
     gap: 0.7rem;
 }
@@ -2725,13 +2662,10 @@ header{
     border-bottom: 1px solid white;
     transition: 0.3s;
 }
-/* .nav-link hr{
-    display: flex;
-} */
+
 .nav-link li{
     padding: 1rem;
     margin: 0;
-    /* border: 2px solid black; */
 }
 .nav-link li a{
     color: var(--white);
@@ -2770,14 +2704,11 @@ header{
 .nav-icon{
     width: 30%;
     float: right;
-    /* border: 2px solid black; */
 }
 .nav-icon ul{
     display: flex;
     align-items: center;
-    /* border: 2px solid black; */
     justify-content: space-around;
-    /* padding: 0.1rem; */
 }
 
 /* Header responsiveness ends here*/
